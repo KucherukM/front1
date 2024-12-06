@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Palette</title>
+    <link rel="stylesheet" href="./stzle.css">
+</head>
+<body>
+    <h1>Create new color</h1>
+    <form id="color-form">
+        <label for="name">Color:</label>
+        <input type="text" id="name" placeholder="Enter color name" required>
+        <label for="type">Type:</label>
+        <select id="type">
+            <option value="RGB">RGB</option>
+            <option value="RGBA">RGBA</option>
+            <option value="HEX">HEX</option>
+        </select>
+        <label for="code">Code:</label>
+        <input type="text" id="code" placeholder="Enter color code" required>
+        <button type="submit">Save</button>
+    </form>
+    <h2 style="text-align:center;">All colors</h2>
+    <div id="palette"></div>
+    <script src="script.js"></script>
+</body>
+</html>
